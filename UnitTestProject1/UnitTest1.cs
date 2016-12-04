@@ -24,10 +24,12 @@ namespace UnitTestProject1
             new LoginLogoutService(driver).login(user);
             Assert.IsTrue(new LoginPage(driver).isPostDysplayed());
 
-            new LoginLogoutService(driver).logout(user);
-            Assert.IsTrue(new LoginPage(driver).isPasswdDisplayed());
+            new WriteMailService(driver).writeMessage();
+            new WriteMailService(driver).prepareMessage();
+           // new LoginLogoutService(driver).logout(user);
+           // Assert.IsTrue(new LoginPage(driver).isPasswdDisplayed());
 
-            driver.Close();
+           // driver.Close();
 
 
         }

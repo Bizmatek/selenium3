@@ -64,8 +64,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\MailPage.cs" />
     <Compile Include="Sevices\LoginLogoutService.cs" />
     <Compile Include="BO\User.cs" />
+    <Compile Include="Sevices\WriteMailService.cs" />
     <Compile Include="TestData\BOGenerator.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
